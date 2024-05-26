@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square</title>
+</head>
+<body>
+    <h3>Square of a number</h3>
+    Enter a number:
+    <input type="number" id="Fnum1">
+
+    <button onclick="square()">Click</button>
+    <p id="dem"></p>
+
+    <script>
+        function square(){
+            let a=parseInt(document.getElementById("Fnum1").value);
+            
+            z=a*a;
+
+            document.getElementById("dem").innerHTML= `Square of ${a} is:`+z;
+        }
+    </script>
+</body>
+</html>

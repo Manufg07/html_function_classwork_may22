@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube</title>
+</head>
+<body>
+    <h3>Simple interest</h3>
+    Enter Principal:
+    <input type="text" id="principal">
+    Rate of Interest:
+    <input type="text" id="rate">
+    Time(Years):
+    <input type="text" id="time">
+    <button onclick="simple()">Click</button>
+    <p id="dem"></p>
+    <br>
+    <br>
+    <h3>Compound interest</h3>
+    Enter Principal:
+    <input type="text" id="principal">
+    Rate of Interest:
+    <input type="text" id="rate">
+    Time(Years):
+    <input type="text" id="time">
+    Compound per Year:
+    <input type="text" id="Ctime">
+    <button onclick="compound()">Click</button>
+    <p id="demo"></p>
+
+    <script>
+        function simple(){
+            let principal = parseFloat(document.getElementById("principal").value);
+            let rate = parseFloat(document.getElementById("rate"),value);
+            let time = parseFloat(document.getElementById("time").value);
+
+            SI = (principal * rate * time)/100;
+
+            document.getElementById("dem").innerHTML= `Simple Interest is:`+SI;
+        }
+
+        function compound(){
+            let principal = parseFloat(document.getElementById("principal").value);
+            let rate = parseFloat(document.getElementById("rate"),value);
+            let time = parseFloat(document.getElementById("time").value);
+            let n=parseInt(document.getElementById("Ctime").value);
+            CI = (principal *(2*((1 + (rate / (n *100)))), n * time)- principal);
+
+            document.getElementById("demo").innerHTML= `Compound Interest is:`+CI;
+        }
+    </script>
+</body>
+</html>

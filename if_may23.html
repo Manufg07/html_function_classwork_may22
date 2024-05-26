@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if statement</title>
+</head>
+<body>
+    <h3>IF statemet</h3>
+    <script>
+        let x=25;
+        let y=30;
+        if(x==y)
+        {
+                document.write(`<br>x=${x}, y=${y} :x is equal to y`)
+        }
+        else
+        {
+            document.write(`<br>x=${x}, y=${y} :x is not equal to y`)
+        }
+
+        let a=25;
+        let b=30;
+        if(a>b)
+        {
+                document.write(`<br>a=${a}, b=${b} :a is greater than b`)
+        }
+        else
+        {
+            document.write(`<br>a=${a}, b=${b}:b is greater than a`)
+        }
+
+        let m=20;
+        let n=29;
+        if(m==n)
+        {
+            document.write(`<br>m=${m}, n=${n}:m is equal to n`)   
+        }
+        else if(m>n)
+        {
+            document.write(`<br>m=${m}, n=${n} :m is greater than n`)
+        }
+        else
+        {
+            
+            document.write(`<br>m=${m}, n=${n}:n is greater than m`)
+        }
+
+        function check(str)
+        {
+            if(str="manu")
+            {
+                document.write(`<br>true:`,str)
+            }
+            else
+            {
+                document.write("<br>false:",str)
+            }
+        }
+        check();
+    </script>
+    
+</body>
+</html>

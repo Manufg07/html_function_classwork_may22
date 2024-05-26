@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruitd</title>
+</head>
+<body>
+    <h3>List of fruits</h3>
+    <p id="frts"></p>
+    <select name="fruit" id="fruits" onchange="fruit()">
+        <!-- <option value="1">0</option> -->
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+<p id="fr"></p>
+    <script>
+        let fruits=["Apple","Avacado","Mango","Grape","Kiwi","Banana"];
+        function fruit(){
+            document.getElementById("fr").innerHTML=fruits[document.getElementById("fruits").value-1]
+        }
+        document.getElementById("frts").innerHTML=("List of fruits:"+fruits);
+    </script>
+</body>
+</html>
